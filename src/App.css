@@ -21,7 +21,8 @@ flex-direction: row;
   }
 }
 .Main,
-.SeeList{
+.SeeList,
+.DoneTasksList{
   text-align: center;
   background-color: rgba(146, 207, 208, 0.541);
   width:45rem;
@@ -32,18 +33,27 @@ flex-direction: row;
 }
 .listbutton{
   display: flex;
-  flex-direction: row;
+  justify-content: space-around;
+  margin-left:-4rem;
+}
+.buttondone{
+  display: flex;
+  justify-content: space-around;
+  
 }
 h1{
   background-color: rgba(23, 133, 134, 0.603);
    text-shadow: 0.2rem 0.2rem 0rem rgba(146, 207, 208, 0.541);
   width:30rem;
-  margin: auto;
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
+.mainButtons h1{
+   margin: auto;
+}
 .mainButtons h1,
-.SeeList h1{
+.SeeList h1,
+ .DoneTasksList h1{
 margin-top: 3rem;
 font-size: 4rem;
 color: white;
@@ -62,7 +72,8 @@ flex-direction: row;
     text-align: left;
 padding-left:4rem;
 }
-.SeeList li{
+.SeeList li,
+.DoneTasksList li{
   list-style-type: none;
     width: 90%;
      margin: 1rem 1rem;
@@ -92,6 +103,14 @@ padding-left:4rem;
        text-shadow: 0.2rem 0.2rem 0rem rgba(146, 207, 208, 0.541);
       padding: 1rem 3.5rem; 
       font-size: 2rem;
+}
+.SeeList li{
+  display: flex;
+  justify-content: space-between;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
 }
 .task_name{
 font-size: 1.5rem;
@@ -142,8 +161,6 @@ font-size: 1.5rem;
 }
 .theButton{
     float: right;
-    margin-right:1rem;
-  
 	 -moz-box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
       -webkit-box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
       box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
@@ -169,6 +186,7 @@ font-size: 1.5rem;
       padding: 1rem 1.5rem; 
 }
 .myButtonBack
+
 {
 	 -moz-box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
       -webkit-box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
@@ -195,7 +213,7 @@ font-size: 1.5rem;
       text-decoration: none;
        text-shadow: 0.2rem 0.2rem 0rem rgba(146, 207, 208, 0.541);
       padding: 2rem 1.5rem; 
-      margin: 3rem 1rem 1rem -3rem;
+      margin: 3rem 0rem 1rem 0rem;
 }
 .myButtonBack:hover{
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(23, 133, 134, 0.603)), color-stop(1, rgba(146, 207, 208, 0.541)));
