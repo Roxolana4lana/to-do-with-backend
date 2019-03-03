@@ -4,6 +4,9 @@
   padding:0;
   font-size: 10px;
 }
+button{
+  outline: none;
+}
 .App{
   display: flex;
 justify-content: space-around;
@@ -13,7 +16,8 @@ flex-direction: row;
 @media only screen and (max-width: 600px) {
   .Main,
   .SeeList{
-    width:40rem;
+    width:100vw;
+    height: 100vh;
   }
 }
 .Main,
@@ -48,11 +52,12 @@ color: white;
   margin-top:2rem;
 }
 .but{
-margin: 0 2rem;
+margin: 0 2rem 1rem 0;
 overflow-x: scroll;
 display:flex;
 flex-direction: row;
 }
+
 .SeeList{
     text-align: left;
 padding-left:4rem;
@@ -190,7 +195,7 @@ font-size: 1.5rem;
       text-decoration: none;
        text-shadow: 0.2rem 0.2rem 0rem rgba(146, 207, 208, 0.541);
       padding: 2rem 1.5rem; 
-      margin: 3rem 0 1rem 0;
+      margin: 3rem 1rem 1rem -3rem;
 }
 .myButtonBack:hover{
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(23, 133, 134, 0.603)), color-stop(1, rgba(146, 207, 208, 0.541)));
@@ -201,4 +206,7 @@ font-size: 1.5rem;
         background: linear-gradient(to bottom, rgba(23, 133, 134, 0.603) 5%, rgba(146, 207, 208, 0.541) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(23, 133, 134, 0.603)', endColorstr='rgba(146, 207, 208, 0.541)',GradientType=0);
         background-color: rgba(23, 133, 134, 0.603);
+}
+.myButton{
+margin-bottom: 2rem;
 }
