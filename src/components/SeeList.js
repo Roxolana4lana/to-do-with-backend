@@ -31,9 +31,11 @@ export default class SeeList extends Component {
     return (
       <div className='SeeList'>
         <div className='listbutton'>
-          <Link to='/'><button className='myButtonBack' onClick={this.Add}><i className="fas fa-chevron-left " style={{ fontSize: '2rem' }}></i></button></Link>
-        <h1>My list of tasks</h1>
-      </div>
+          <Link to='/'><button className='myButtonBack' onClick={this.Add}>
+          <i className="fas fa-chevron-left " style={{ fontSize: '2rem' }}>
+          </i></button></Link>
+          <h1>My list of tasks</h1>
+        </div>
         <ul className='listTasks'>
           {myList}
         </ul>
