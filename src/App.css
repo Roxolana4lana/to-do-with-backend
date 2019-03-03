@@ -1,0 +1,207 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+  font-size: 10px;
+}
+.App{
+  display: flex;
+justify-content: space-around;
+flex-direction: row;
+  width:100vw;
+}
+@media only screen and (max-width: 600px) {
+  .Main,
+  .SeeList{
+    width:40rem;
+  }
+}
+.Main,
+.SeeList{
+  text-align: center;
+  background-color: rgba(146, 207, 208, 0.541);
+  width:45rem;
+  height:60rem;
+  border-radius: 1rem;
+  overflow: scroll;
+  color: white;
+}
+.listbutton{
+  display: flex;
+  flex-direction: row;
+}
+h1{
+  background-color: rgba(23, 133, 134, 0.603);
+   text-shadow: 0.2rem 0.2rem 0rem rgba(146, 207, 208, 0.541);
+  width:30rem;
+  margin: auto;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.mainButtons h1,
+.SeeList h1{
+margin-top: 3rem;
+font-size: 4rem;
+color: white;
+}
+.SeeList .myButton{
+  margin-top:2rem;
+}
+.but{
+margin: 0 2rem;
+overflow-x: scroll;
+display:flex;
+flex-direction: row;
+}
+.SeeList{
+    text-align: left;
+padding-left:4rem;
+ 
+}
+.SeeList li{
+  list-style-type: none;
+    width: 90%;
+     margin: 1rem 1rem;
+	 -moz-box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
+      -webkit-box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
+      box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(146, 207, 208, 0.541)), color-stop(1, rgba(23, 133, 134, 0.603)));
+      background: -moz-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: -webkit-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: -o-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: -ms-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: linear-gradient(to bottom, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(146, 207, 208, 0.541)', endColorstr='rgba(23, 133, 134, 0.603)',GradientType=0);
+      opacity: 1;
+      background-color: rgba(146, 207, 208, 0.541);
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(23, 132, 134, 0.849);
+      display: block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-weight: bold;
+      display: inline-block;
+      text-decoration: none;
+       text-shadow: 0.2rem 0.2rem 0rem rgba(146, 207, 208, 0.541);
+      padding: 1rem 3.5rem; 
+      font-size: 2rem;
+}
+
+.task_name{
+font-size: 1.5rem;
+}
+.myButton,
+.task_name {
+  margin: 1rem 1rem;
+	 -moz-box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
+      -webkit-box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
+      box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(146, 207, 208, 0.541)), color-stop(1, rgba(23, 133, 134, 0.603)));
+      background: -moz-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: -webkit-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: -o-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: -ms-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: linear-gradient(to bottom, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(146, 207, 208, 0.541)', endColorstr='rgba(23, 133, 134, 0.603)',GradientType=0);
+      opacity: 1;
+      background-color: rgba(146, 207, 208, 0.541);
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(23, 132, 134, 0.849);
+      display: block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-weight: bold;
+      display: inline-block;
+      text-decoration: none;
+       text-shadow: 0.2rem 0.2rem 0rem rgba(146, 207, 208, 0.541);
+      padding: 1rem 3.5rem; 
+}
+.myButton:hover {
+
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(23, 133, 134, 0.603)), color-stop(1, rgba(146, 207, 208, 0.541)));
+        background: -moz-linear-gradient(top, rgba(23, 133, 134, 0.603) 5%, rgba(146, 207, 208, 0.541) 100%);
+        background: -webkit-linear-gradient(top, rgba(23, 133, 134, 0.603) 5%, rgba(146, 207, 208, 0.541) 100%);
+        background: -o-linear-gradient(top, rgba(23, 133, 134, 0.603) 5%, rgba(146, 207, 208, 0.541) 100%);
+        background: -ms-linear-gradient(top, rgba(23, 133, 134, 0.603) 5%, rgba(146, 207, 208, 0.541) 100%);
+        background: linear-gradient(to bottom, rgba(23, 133, 134, 0.603) 5%, rgba(146, 207, 208, 0.541) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(23, 133, 134, 0.603)', endColorstr='rgba(146, 207, 208, 0.541)',GradientType=0);
+        background-color: rgba(23, 133, 134, 0.603);
+}
+.myLabel{
+  color: white;
+  font-size: 2rem;
+   text-shadow: 0.2rem 0.2rem 0rem rgba(146, 207, 208, 0.986);
+}
+.theButton{
+    float: right;
+    margin-right:1rem;
+  
+	 -moz-box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
+      -webkit-box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
+      box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(146, 207, 208, 0.541)), color-stop(1, rgba(23, 133, 134, 0.603)));
+      background: -moz-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: -webkit-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: -o-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: -ms-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: linear-gradient(to bottom, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(146, 207, 208, 0.541)', endColorstr='rgba(23, 133, 134, 0.603)',GradientType=0);
+      opacity: 1;
+      background-color: rgba(146, 207, 208, 0.541);
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(23, 132, 134, 0.849);
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-weight: bold;
+      text-decoration: none;
+       text-shadow: 0.2rem 0.2rem 0rem rgba(146, 207, 208, 0.541);
+      padding: 1rem 1.5rem; 
+}
+.myButtonBack
+{
+	 -moz-box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
+      -webkit-box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
+      box-shadow: inset 0px 1px 0px 0px rgba(146, 207, 208, 0.541);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(146, 207, 208, 0.541)), color-stop(1, rgba(23, 133, 134, 0.603)));
+      background: -moz-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: -webkit-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: -o-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: -ms-linear-gradient(top, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      background: linear-gradient(to bottom, rgba(146, 207, 208, 0.541) 5%, rgba(23, 133, 134, 0.603) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(146, 207, 208, 0.541)', endColorstr='rgba(23, 133, 134, 0.603)',GradientType=0);
+      opacity: 1;
+      background-color: rgba(146, 207, 208, 0.541);
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      border-radius: 6px;
+     border:none;
+      display: block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-weight: bold;
+      display: inline-block;
+      text-decoration: none;
+       text-shadow: 0.2rem 0.2rem 0rem rgba(146, 207, 208, 0.541);
+      padding: 2rem 1.5rem; 
+      margin: 3rem 0 1rem 0;
+}
+.myButtonBack:hover{
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, rgba(23, 133, 134, 0.603)), color-stop(1, rgba(146, 207, 208, 0.541)));
+        background: -moz-linear-gradient(top, rgba(23, 133, 134, 0.603) 5%, rgba(146, 207, 208, 0.541) 100%);
+        background: -webkit-linear-gradient(top, rgba(23, 133, 134, 0.603) 5%, rgba(146, 207, 208, 0.541) 100%);
+        background: -o-linear-gradient(top, rgba(23, 133, 134, 0.603) 5%, rgba(146, 207, 208, 0.541) 100%);
+        background: -ms-linear-gradient(top, rgba(23, 133, 134, 0.603) 5%, rgba(146, 207, 208, 0.541) 100%);
+        background: linear-gradient(to bottom, rgba(23, 133, 134, 0.603) 5%, rgba(146, 207, 208, 0.541) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(23, 133, 134, 0.603)', endColorstr='rgba(146, 207, 208, 0.541)',GradientType=0);
+        background-color: rgba(23, 133, 134, 0.603);
+}
