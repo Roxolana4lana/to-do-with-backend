@@ -10,6 +10,7 @@ export default class Main extends Component {
          tasks:[]
         }
     }
+
     handleChange = e => {
        let tasks=[...this.state.tasks]
         tasks[e.target.dataset.id][e.target.className]= e.target.value
@@ -24,7 +25,8 @@ export default class Main extends Component {
             tasks: [...prevState.tasks, { task_name: "" }]
         }))
     }
-    handleSubmit= e =>{
+
+    handleSubmit = e => {
         e.preventDefault()
         const action={
         tasks:this.state.tasks
@@ -36,11 +38,13 @@ export default class Main extends Component {
             tasks:[]
         })
     }
-    handleRemove = index =>{
+
+    handleRemove = index => {
         this.state.tasks.splice(index, 1)
         this.setState({tasks:this.state.tasks})
     }
-    handleClear = e =>{
+
+    handleClear = e => {
         this.setState({
             tasks:[]
         })
@@ -53,25 +57,26 @@ export default class Main extends Component {
                 <h1>To do list</h1>
                 <div className='but'>
                     <button className='myButton' onClick={this.Add}>
-                    <i className="fas fa-plus " style={{ fontSize: '2rem' }}>
-                    </i></button>
+                    <i className="fas fa-plus " style={{ fontSize: '2rem' }}></i>
+                    </button>
 
                     <button className='myButton' onClick={this.handleRemove}>
-                    <i className="fas fa-minus " style={{ fontSize: '2rem' }}>
-                    </i></button>
+                    <i className="fas fa-minus " style={{ fontSize: '2rem' }}></i>
+                    </button>
 
                     <button className='myButton' onClick={this.handleClear}>
-                    <i className="fas fa-trash-alt " style={{ fontSize: '2rem' }}>
-                    </i></button>
+                    <i className="fas fa-trash-alt " style={{ fontSize: '2rem' }}></i>
+                    </button>
 
                     <button className='myButton' onClick={this.handleSubmit}>
-                    <i className="fas fa-save" style={{ fontSize: '2rem' }}>
-                    </i></button>
+                    <i className="fas fa-save" style={{ fontSize: '2rem' }}></i>
+                    </button>
 
                     <Link to='/list'><button className='myButton'>
-                    <i className="fas fa-list-ol" style={{ fontSize: '2rem' }}>
-                    </i></button></Link>
+                    <i className="fas fa-list-ol" style={{ fontSize: '2rem' }}></i>
+                    </button></Link>
                 </div>
+
                 {
                 this.state.tasks.map((task, idx) => {
                     let tid = idx +1
@@ -89,7 +94,7 @@ export default class Main extends Component {
                 })
             }
         </div>
-        </div>
+    </div>
     )
   }
 }

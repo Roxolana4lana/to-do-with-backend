@@ -13,8 +13,8 @@ export default class TaskDelete extends Component {
   render() {
     return (
             <button className='theButton' onClick={this.handleRemove}>
-            <i className="fas fa-minus " style={{ fontSize: '1rem' }}>
-            </i></button>
+              <i className="fas fa-minus " style={{ fontSize: '1rem' }}></i>
+            </button>
     )
   }
 }

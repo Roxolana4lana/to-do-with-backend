@@ -13,6 +13,7 @@ export default class SeeList extends Component {
       is_done:false
     }
   }
+
   componentDidMount(){
     axios.get(`http://127.0.0.1:8000/todo/`)
     .then(res=>this.setState({
@@ -24,16 +25,19 @@ export default class SeeList extends Component {
   render() {
     let myList = this.state.isLoaded?this.state.tasks.map(task=>{
       return(
-      <li key={task.id}>{task.task_name}
-         <TaskDelete id={task.id}/>
-      </li>
+        <li key={task.id}>{task.task_name}
+        <TaskDelete id={task.id}/>
+        </li>
     )}):<li>Loading......</li>
+
     return (
       <div className='SeeList'>
         <div className='listbutton'>
-          <Link to='/'><button className='myButtonBack' onClick={this.Add}>
-          <i className="fas fa-chevron-left " style={{ fontSize: '2rem' }}>
-          </i></button></Link>
+          <Link to='/'>
+            <button className='myButtonBack' onClick={this.Add}>
+              <i className="fas fa-chevron-left " style={{ fontSize: '2rem' }}></i>
+            </button>
+          </Link>
           <h1>My list of tasks</h1>
         </div>
         <ul className='listTasks'>
